@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color:rgb(235, 156, 82);"></body>
+
+
+
+
+
+
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid rgb(48, 2, 2);
+    }
+
+    h1 {
+        color: rgb(9, 70, 240);
+    }
+
+    h2 {
+        color: rgb(255, 0, 0);
+    }
+
+    h3 {
+        color: blueviolet;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .container {
+        text-align: center;
+    }
+</style>
+
+<h1>ENTER PERCENTAGE</h1>
+
+<div class="container">
+
+    <input type="number" id="marks">
+
+    <button onclick="greet()">CHECK</button>
+</div>
+
+<h2 id="result"></h2>
+
+
+<script>
+
+    function greet() {
+
+        var marks = document.getElementById("marks").value;
+
+        if (marks >= 90 && marks < 100) {
+
+            var result = ('GRADE A1')
+
+        } else if (marks < 90 && marks >= 80) {
+
+            var result = (" GRADE A")
+
+        } else if (marks < 80 && marks >= 70) {
+
+            var result = ("GRADE B")
+
+        } else if (marks < 70 && marks >= 60) {
+
+            var result = ("GRADE C")
+
+        } else {
+
+            var result = ("FAIL")
+        }
+
+
+        document.getElementById("result").innerText = result
+
+
+
+
+
+
+    }
+
+</script>
+
+<h3>GRADES DISTRIBUTION</h3>
+
+<div>
+
+    <table width="50%" style="margin: 0 auto;text-align:center">
+
+        <tr>
+
+            <th style="text-align: center;">MARKS</th>
+            <th style="text-align: center;">GRADES</th>
+        </tr>
+        <tr>
+
+            <td style="text-align: center;">Greater or equal to 90</td>
+            <td style="text-align:center">A1</td>
+        </tr>
+        <tr>
+
+            <td style="text-align: center;">Less than 90 or equal to 80</td>
+            <td style="text-align:center">A</td>
+        </tr>
+        <tr>
+
+            <td style="text-align: center;">Less than 80 or equal to 70</td>
+            <td style="text-align:center">B</td>
+
+        </tr>
+        <tr>
+            <td style="text-align: center;">Less than 70 or equal to 60</td>
+            <td style="text-align:center">C</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">Less than 60</td>
+            <td style="text-align:center">FAIL</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+
+</html>
